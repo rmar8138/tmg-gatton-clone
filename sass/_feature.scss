@@ -1,0 +1,145 @@
+.feature--body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__text {
+        text-align: center;
+        padding: 5% 10%;
+        width: 80%;
+
+        @media only screen and (max-width: $bp-largest) {
+            text-align: left;
+            width: 100%;
+        }
+    }
+
+    &__img {
+        
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.feature--neck {
+    background-image: url(../img/neck.jpg);
+    background-size: 80%;
+    background-position: 100% 30%;
+    background-repeat: no-repeat;
+    height: 70vw;
+    overflow: hidden;
+    padding: 7rem;
+    position: relative;
+
+    @media only screen and (max-width: $bp-largest) {
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 0;
+    }
+
+
+    &__text {
+        width: 40%;
+        position: absolute;
+        bottom: 20%;
+
+        @media only screen and (max-width: $bp-largest) {
+            bottom: unset;
+            width: 100%;
+            padding: 5% 10%;
+            position: relative;
+            bottom: unset;
+        }
+    }
+
+    &__img {
+        display: none;
+
+        @media only screen and (max-width: $bp-largest) {
+            display: block;
+        }
+        
+        img {
+            width: 100%;
+
+        }
+    }
+}
+
+.feature--components {
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-largest) {
+        flex-direction: column;
+    }
+
+    &__text {
+        padding: 10rem;
+        flex: 0 0 50%;
+        order: 1;
+
+        @media only screen and (max-width: $bp-largest) {
+            order: 0;
+            padding: 5% 10%;
+        }
+    }
+
+    &__img {
+        flex: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        img {
+            width: 80%;
+
+            @media only screen and (max-width: $bp-largest) {
+                width: 70%;
+            }
+        }
+    }
+}
+
+.feature--pickups {
+    display: flex;
+    align-items: center;
+    
+    @media only screen and (max-width: $bp-largest) {
+        flex-direction: column;
+    }
+
+    &__text {
+        padding: 10rem;
+        flex: 0 0 50%;
+
+        @media only screen and (max-width: $bp-largest) {
+            padding: 5% 10%;
+        }
+    }
+
+    &__img {
+        flex: 1 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        @media only screen and (max-width: $bp-largest) {
+            justify-content: center;
+        }
+        
+        img {
+            width: 100%;
+
+            @media only screen and (max-width: $bp-largest) {
+                width: 63%;
+            }
+        }
+    }
+}

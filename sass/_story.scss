@@ -1,0 +1,34 @@
+.story {
+    background-image: url(../img/quote-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: brightness(40%);
+    height: auto;
+    color: $color-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12rem;
+
+    @media only screen and (max-width: $bp-large) {
+        padding: 5rem 2.5rem;
+    }
+
+    &__quote {
+        text-align: center;
+
+        flex: 0 0 80%;
+
+        p {
+            font-size: 3.5rem;
+            font-style: italic;
+            line-height: 1.2;
+            margin-bottom: 3rem;
+
+            @media only screen and (max-width: $bp-large) {
+                font-size: 2rem;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,50 @@
+// COLORS
+
+$color-black: rgb(27, 27, 27);
+$color-white: #fff;
+$color-grey: #777;
+
+// BREAKPOINTS
+
+$bp-largest: 68.75em; // 1000px
+$bp-large: 43.75em; // 700px
+
+// RESET
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    // border: 0.5px solid orangered;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $color-black;
+}
+
+::selection {
+    color: $color-white;
+    background-color: $color-black;
+}
+
+// GRID
+
+.container {
+    display: grid;
+    grid-template-rows: min-content;
+}
